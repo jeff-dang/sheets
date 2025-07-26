@@ -18,6 +18,11 @@ module.exports = {
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
       },
+      fontFamily: {
+        monograph: ['Monograph', 'sans-serif'], // Add Monograph font
+        roboto: ['Roboto', 'sans-serif'], // Add Roboto font
+        lora: ['Lora', 'serif'], // Add Lora font
+      },
     },
   },
   plugins: [],

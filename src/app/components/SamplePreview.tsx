@@ -7,7 +7,7 @@ const SamplePreview: React.FC = () => {
   return (
     <div className="bg-blue-600 text-yellow-200 min-h-screen flex flex-col items-center justify-center p-8">
       <motion.h1
-        className="text-3xl font-bold mb-4"
+        className="text-3xl font-poppins font-bold mb-4"
         initial={{ y: 20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
@@ -29,9 +29,9 @@ const SamplePreview: React.FC = () => {
 
         {/* Textbox Section */}
         <div className="flex-1 flex flex-col items-start">
-          <label className="mb-2 font-medium">Is there anything you'd like to change?</label>
+          <label className="block mb-2 font-lora font-medium">Is there anything you'd like to change?</label>
           <textarea
-            className="w-full h-32 px-4 py-2 rounded bg-white text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300"
+            className="w-full px-4 py-2 rounded bg-white text-blue-600 font-lora focus:outline-none focus:ring-2 focus:ring-blue-300"
             placeholder="Enter your feedback here..."
           ></textarea>
         </div>
