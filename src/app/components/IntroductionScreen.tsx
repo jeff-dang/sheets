@@ -35,9 +35,14 @@ const IntroductionScreen: React.FC = () => {
       </motion.div>
 
       {/* Bottom Left Text */}
-      <div className="absolute bottom-4 left-4 text-white text-lg">
+      <motion.div
+        className="absolute bottom-4 left-4 text-white text-lg"
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: 'easeOut' }}
+      >
         Making music accessible to you
-      </div>
+      </motion.div>
     </div>
   );
 };
